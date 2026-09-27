@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<!-- Концепт 3 — Smile Story SPA: тёплый эмоциональный сторителлинг -->
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dr. Baisangur Bitiev — истории улыбок</title>
+  <meta name="description" content="Стоматолог-ортопед Байсангур Битиев. Тёплые истории преображения улыбок: виниры, коронки, имплантация. Москва, ул. Коштоянца 47к1.">
+  <meta name="theme-color" content="#3D405B">
+  <link rel="icon" type="image/svg+xml" href="assets/logo-tooth.svg">
+
+  <!-- Шрифты: Playfair Display (display serif) + Inter (текст) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,500&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <meta property="og:title" content="Dr. Baisangur Bitiev — истории улыбок">
+  <meta property="og:description" content="Тёплые истории преображения улыбок. Эстетическая стоматология в Москве.">
+  <meta property="og:type" content="website">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="scroll-progress" aria-hidden="true"></div>
+
+  <!-- Шапка -->
+  <header class="site-header" id="siteHeader">
+    <a href="#/" class="brand" aria-label="На главную">
+      <img src="assets/logo-tooth.svg" alt="" class="brand-logo" width="34" height="34">
+      <span class="brand-name">Dr. Baisangur</span>
+    </a>
+    <nav class="site-nav" aria-label="Главная навигация">
+      <a href="#/about" data-link="about">О враче</a>
+      <a href="#/services" data-link="services">Услуги</a>
+      <a href="#/cases" data-link="cases">Истории</a>
+      <a href="#/contact" data-link="contact">Контакты</a>
+    </nav>
+    <a href="#/contact" class="cta-button" data-link="contact">Записаться</a>
+    <button class="nav-toggle" aria-label="Меню" aria-expanded="false"><span></span><span></span><span></span></button>
+  </header>
+
+  <main class="spa-root" id="spa-root">
+
+    <!-- 01 — Hero (ken-burns) -->
+    <section class="view view-hero is-active" data-view="hero" aria-label="Главный экран">
+      <div class="hero-media" aria-hidden="true">
+        <img src="assets/doctor-cover.jpg" alt="" class="hero-kenburns">
+        <div class="hero-overlay"></div>
+      </div>
+      <div class="view-inner hero-inner">
+        <p class="hero-kicker">ЦЕНТР СОВРЕМЕННОЙ СТОМАТОЛОГИИ · МОСКВА</p>
+        <h1 class="hero-title">Истории,<br>которые начинаются<br>с улыбки</h1>
+        <p class="hero-sub">Байсангур Битиев — стоматолог-ортопед, для которого каждое лечение — это акт создания гармонии между здоровьем и эстетикой.</p>
+        <div class="hero-actions">
+          <a href="#/cases" class="cta-primary" data-link="cases">Смотреть истории</a>
+          <a href="#/contact" class="cta-ghost" data-link="contact">Записаться →</a>
+        </div>
+        <a href="#/about" class="hero-scroll" data-link="about" aria-label="Листайте вниз">
+          <span></span> узнать о враче
+        </a>
+      </div>
+    </section>
+
+    <!-- 02 — О враче -->
+    <section class="view view-about" data-view="about" aria-label="О враче">
+      <div class="view-inner narrow">
+        <header class="section-header center">
+          <span class="section-kicker">Глава первая</span>
+          <h2 class="section-title">Биография</h2>
+        </header>
+        <div class="about-photo">
+          <img src="assets/doctor-cafe.jpg" alt="Доктор Байсангур Битиев" loading="lazy">
+        </div>
+        <p class="about-lead">Меня зовут Битиев Байсангур, я стоматолог-ортопед из Москвы. Оказываю полнофункциональное эстетическое восстановление зубов, ставлю коронки и виниры, а моя команда оказывает весь спектр услуг: имплантация, профилактика кариеса, ортодонтия, протезирование, отбеливание и гигиена.</p>
+        <div class="about-chapters">
+          <p>Я родом из горного села Элистанжи, что в Чечне. Мы с семьёй переехали в Барнаул, когда мне было 2 года. Там я вырос, закончил школу и медицинский университет, выбрав путь стоматолога.</p>
+          <p>С юности я искал способы развиваться: бесплатно ассистировал именитым докторам и дежурил в стационарах, чтобы научиться работать с пациентами. После университета в 2019-м переехал в Новосибирск в ординатуру. Прошёл жёсткий отбор в самую известную клинику города, освоил микроскоп, поставил цель — 1000 пролеченных зубов за год. План перевыполнен в 6 раз.</p>
+          <p>Весной 2022 года я переехал в Москву. Моя цель — помочь людям жить лучшую жизнь через здоровую и красивую улыбку.</p>
+        </div>
+        <blockquote class="pull-quote">«Стоматология — это искусство и наука одновременно. Каждое лечение — акт создания гармонии между здоровьем и эстетикой.»<cite>— Dr. Baisangur Bitiev</cite></blockquote>
+      </div>
+    </section>
+
+    <!-- 03 — Услуги -->
+    <section class="view view-services" data-view="services" aria-label="Услуги">
+      <div class="view-inner">
+        <header class="section-header center">
+          <span class="section-kicker">Чем я помогаю</span>
+          <h2 class="section-title">Услуги</h2>
+        </header>
+        <p class="section-lead center">Высокоэстетичные виниры, современные технологии и полный спектр стоматологии команды.</p>
+        <div class="services-grid">
+          <article class="service-card"><span class="service-num">01</span><h3>Гигиена полости рта</h3><p>Профессиональная чистка, удаление камня и налёта, профилактика кариеса и дёсен.</p></article>
+          <article class="service-card"><span class="service-num">02</span><h3>Установка виниров</h3><p>Высокоэстетичные виниры и люминиры для коррекции формы, цвета и дефектов.</p></article>
+          <article class="service-card"><span class="service-num">03</span><h3>Коронки ZrO<sub>2</sub></h3><p>Циркониевые коронки — прочность, долговечность, естественный вид. Гарантия 2 года.</p></article>
+          <article class="service-card"><span class="service-num">04</span><h3>Лечение ВНЧС</h3><p>Дисфункция сустава, боли в челюсти, бруксизм. Восстановление правильного прикуса.</p></article>
+          <article class="service-card"><span class="service-num">05</span><h3>Отбеливание Zoom 4</h3><p>Профессиональное отбеливание безопасными системами с контролируемым составом.</p></article>
+          <article class="service-card"><span class="service-num">06</span><h3>Имплантация</h3><p>Восстановление отсутствующих зубов биосовместимыми имплантами, 3D-планирование.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 04 — Технологии -->
+    <section class="view view-technologies" data-view="technologies" aria-label="Технологии">
+      <div class="view-inner">
+        <header class="section-header center">
+          <span class="section-kicker">Инструменты</span>
+          <h2 class="section-title">Технологии</h2>
+        </header>
+        <p class="section-lead center">Передовые методики делают лечение эффективным, безопасным и комфортным.</p>
+        <div class="tech-list">
+          <article class="tech-row"><span class="tech-num">01</span><div><h3>Цифровая стоматология</h3><p>3D-сканирование, CAD/CAM, DSD — цифровое моделирование улыбки.</p></div></article>
+          <article class="tech-row"><span class="tech-num">02</span><div><h3>Минимально инвазивные методики</h3><p>Воздушно-абразивная обработка, инфильтрация кариеса (Icon).</p></div></article>
+          <article class="tech-row"><span class="tech-num">03</span><div><h3>Ортодонтия</h3><p>Элайнеры и самолигирующие брекеты.</p></div></article>
+          <article class="tech-row"><span class="tech-num">04</span><div><h3>Биоматериалы</h3><p>Композиты высокой прочности, биоактивные материалы.</p></div></article>
+          <article class="tech-row"><span class="tech-num">05</span><div><h3>Эстетическая стоматология</h3><p>Виниры, люминиры, безопасные отбеливающие системы.</p></div></article>
+          <article class="tech-row"><span class="tech-num">06</span><div><h3>Имплантация</h3><p>Компьютерное планирование, 3D-томография, титан и цирконий.</p></div></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 05 — Преимущества -->
+    <section class="view view-advantages" data-view="advantages" aria-label="Преимущества">
+      <div class="view-inner narrow">
+        <header class="section-header center">
+          <span class="section-kicker">Почему я</span>
+          <h2 class="section-title">Преимущества</h2>
+        </header>
+        <div class="advantages-list">
+          <article class="advantage-item"><h3>Качество</h3><p>Современные методики и материалы проверенных фирм для высококлассного результата.</p></article>
+          <article class="advantage-item"><h3>Индивидуальный подход</h3><p>Каждый пациент неповторим. План — на всех этапах, от диагностики до наблюдения.</p></article>
+          <article class="advantage-item"><h3>Доступен 24/7</h3><p>Всегда на связи — даже после приёма можно написать по любым вопросам.</p></article>
+          <article class="advantage-item"><h3>Гарантия</h3><p>2 года на коронки и виниры. Срок службы — более 15 лет.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 06 — Истории (кейсы) -->
+    <section class="view view-cases" data-view="cases" aria-label="Истории пациентов">
+      <div class="view-inner">
+        <header class="section-header center">
+          <span class="section-kicker">Главы историй</span>
+          <h2 class="section-title">Пациенты</h2>
+        </header>
+        <p class="section-lead center">Реальные случаи из практики. Эмоции, которые невозможно подделать.</p>
+
+        <article class="story-block">
+          <div class="story-media"><img src="assets/case1-after-smile.jpg" alt="Пациент после лечения" loading="lazy"></div>
+          <div class="story-text">
+            <span class="story-chapter">История №1 · Юношеская травма</span>
+            <h3>Возвращение улыбки</h3>
+            <p>Пациент ударился передними зубами ещё в юности — они сильно пострадали, он стеснялся улыбаться. Восстановление циркониевыми коронками и винирами, шесть зубов в зоне улыбки, корректировка десны.</p>
+            <p class="story-result">Работа заняла около месяца. Пациент снова улыбается без стеснения в любой ситуации.</p>
+            <div class="story-pair"><figure><img src="assets/case1-before-smile.jpg" alt="до"><figcaption>до</figcaption></figure><figure><img src="assets/case1-after-smile.jpg" alt="после"><figcaption>после</figcaption></figure></div>
+          </div>
+        </article>
+
+        <article class="story-block story-block--rev">
+          <div class="story-media"><img src="assets/case2-after-mouth.jpg" alt="Пациент после лечения" loading="lazy"></div>
+          <div class="story-text">
+            <span class="story-chapter">История №2 · Инженер, 64 года</span>
+            <h3>Победа над временем</h3>
+            <p>Долгие годы откладывал визит к стоматологу: сильный износ зубов, потемнение эмали, недостаток нескольких зубов. Санация, импланты из биосовместимого материала, циркониевые коронки.</p>
+            <p class="story-result">Работа продолжалась 9 месяцев. Впервые за много лет он спокойно улыбается.</p>
+            <div class="story-pair"><figure><img src="assets/case2-before-mouth.jpg" alt="до"><figcaption>до</figcaption></figure><figure><img src="assets/case2-after-mouth.jpg" alt="после"><figcaption>после</figcaption></figure></div>
+          </div>
+        </article>
+
+        <article class="story-block story-block--accent">
+          <div class="story-media story-media--tall"><img src="assets/case3-father-with-doctor.jpg" alt="Доктор Битиев с отцом" loading="lazy"></div>
+          <div class="story-text">
+            <span class="story-chapter">История №3 · Мой отец</span>
+            <h3>Благодарность, которую нельзя измерить</h3>
+            <p>Однажды он попал в серьёзную аварию: сломана верхняя челюсть, раздроблены передние нижние зубы, смещение всего ряда. Шины — полгода питания через трубочку. Он смирился и жил с этим до 54 лет.</p>
+            <p>Когда я начал путь в стоматологии, я пообещал помочь ему вернуть красивую и здоровую улыбку.</p>
+            <p class="story-result">Отец снова стал широко улыбаться. Это была не просто работа — история о том, как знания меняют жизнь близкого человека.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- 07 — Мифы -->
+    <section class="view view-myths" data-view="myths" aria-label="Мифы или правда">
+      <div class="view-inner">
+        <header class="section-header center">
+          <span class="section-kicker">Разберём заблуждения</span>
+          <h2 class="section-title">Мифы или правда</h2>
+        </header>
+        <div class="myths-grid">
+          <article class="myth-card"><span class="myth-tag">Миф</span><p class="myth-statement">Если зубы не болят — они здоровы</p><p class="myth-answer">Кариес на начальной стадии не болит. Осмотр — минимум раз в полгода.</p></article>
+          <article class="myth-card"><span class="myth-tag">Миф</span><p class="myth-statement">Чем жёстче щётка, тем лучше</p><p class="myth-answer">Жёсткие щётки портят эмаль. Важны количество и плотность щетинок.</p></article>
+          <article class="myth-card"><span class="myth-tag truth">Правда</span><p class="myth-statement">Сладкое вредно для зубов</p><p class="myth-answer">Частота потребления делает среду кислой — зубы слабеют.</p></article>
+          <article class="myth-card"><span class="myth-tag truth">Правда</span><p class="myth-statement">Избыток фтора вреден</p><p class="myth-answer">В избытке — флюороз. В норме — защита от кариеса.</p></article>
+          <article class="myth-card"><span class="myth-tag">Миф</span><p class="myth-statement">Зубы мудрости всегда удаляют</p><p class="myth-answer">Если растут правильно и без дискомфорта — можно оставить.</p></article>
+          <article class="myth-card"><span class="myth-tag">Миф</span><p class="myth-statement">Отбеливание вредно</p><p class="myth-answer">Современные системы безопасны при профессиональном проведении.</p></article>
+          <article class="myth-card"><span class="myth-tag">Миф</span><p class="myth-statement">Лечение всегда дорого</p><p class="myth-answer">Визиты 2 раза в год помогают избежать дорогого лечения.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 08 — Рекомендации -->
+    <section class="view view-recommendations" data-view="recommendations" aria-label="Рекомендации">
+      <div class="view-inner narrow">
+        <header class="section-header center">
+          <span class="section-kicker">Забота</span>
+          <h2 class="section-title">Рекомендации</h2>
+        </header>
+        <div class="recs-list">
+          <article class="rec-item"><span class="rec-num">01</span><div><h3>Правильная чистка</h3><p>2 минуты утром и вечером, мягкая щетина, смена каждые 2–3 месяца, нить или ирригатор.</p></div></article>
+          <article class="rec-item"><span class="rec-num">02</span><div><h3>Питание</h3><p>Меньше сахара, больше кальция и фтора: молочные продукты, рыба, орехи, зелень.</p></div></article>
+          <article class="rec-item"><span class="rec-num">03</span><div><h3>Визиты к врачу</h3><p>2 раза в год. Ранняя диагностика делает лечение легче и дешевле.</p></div></article>
+        </div>
+        <p class="section-quote">Забота о зубах — это уважение к себе, инвестиция в будущее и способ выразить внутреннюю гармонию.</p>
+      </div>
+    </section>
+
+    <!-- 09 — Контакты -->
+    <section class="view view-contact" data-view="contact" aria-label="Контакты">
+      <div class="view-inner">
+        <header class="section-header center">
+          <span class="section-kicker">Финал</span>
+          <h2 class="section-title">Записаться</h2>
+        </header>
+        <div class="contact-grid">
+          <div class="contact-main">
+            <p class="contact-lead">Удобнее всего написать в Telegram — отвечаю быстро и подробно.</p>
+            <a href="https://t.me/BaisangurB" class="contact-cta" target="_blank" rel="noopener">
+              <span class="contact-cta-handle">@BaisangurB</span>
+              <span class="contact-cta-label">Записаться на приём</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12 H 19 M13 5 L 20 12 L 13 19"/></svg>
+            </a>
+            <ul class="contact-list">
+              <li><span class="contact-label">Телефон</span><a href="tel:+79967121552">+7 (996) 712-15-52</a></li>
+              <li><span class="contact-label">Telegram</span><a href="https://t.me/BaisangurB" target="_blank" rel="noopener">@BaisangurB</a></li>
+              <li><span class="contact-label">Instagram</span><a href="https://instagram.com/baisangur_b" target="_blank" rel="noopener">@baisangur_b</a></li>
+              <li><span class="contact-label">Адрес</span><span>Москва, ул. Коштоянца, 47к1<br>Центр Современной стоматологии</span></li>
+              <li><span class="contact-label">Метро</span><span>Юго-Западная, выход 6 — 900 м</span></li>
+              <li><span class="contact-label">На связи</span><span>24/7 — пишите по любым вопросам</span></li>
+            </ul>
+          </div>
+          <aside class="contact-aside">
+            <div class="contact-photo"><img src="assets/doctor-clinic.jpg" alt="Доктор Битиев в клинике" loading="lazy"></div>
+            <div class="contact-qr-grid">
+              <a href="https://t.me/BaisangurB" target="_blank" rel="noopener" class="contact-qr-item"><div class="contact-qr-icon" aria-hidden="true">✈</div><span>Telegram</span><small>@BaisangurB</small></a>
+              <a href="https://instagram.com/baisangur_b" target="_blank" rel="noopener" class="contact-qr-item"><div class="contact-qr-icon" aria-hidden="true">◉</div><span>Instagram</span><small>@baisangur_b</small></a>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <a href="#/contact" class="fab" data-link="contact" aria-label="Записаться на приём">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+    <span>Записаться</span>
+  </a>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <img src="assets/logo-tooth.svg" alt="" class="footer-logo" width="30" height="30">
+        <div><p class="footer-name">Dr. Baisangur Bitiev</p><p class="footer-tag">стоматолог-ортопед · Москва</p></div>
+      </div>
+      <div class="footer-meta"><span>© 2025</span><span>Центр Современной стоматологии</span><span>+7 (996) 712-15-52</span></div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
