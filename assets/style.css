@@ -253,6 +253,7 @@ em,i{font-style:italic}
   .advantage-item h3{font-size:18px}
   .advantage-item p{font-size:14px}
   .story-text h3{font-size:20px}
+  .story-media--tall img{aspect-ratio:1/1}
   .story-text p{font-size:14.5px}
   .story-chapter{font-size:11px}
   .myth-statement{font-size:16px}
