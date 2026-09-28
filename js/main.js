@@ -10,6 +10,7 @@
   var navLinks = Array.prototype.slice.call(document.querySelectorAll(".site-nav a[data-link]"));
   var header = document.getElementById("siteHeader");
   var progress = document.querySelector(".scroll-progress");
+  var currentView = "hero";
 
   function nameFromHash() {
     var h = window.location.hash || "#/";
@@ -35,8 +36,10 @@
       views[0].classList.add("is-active");
       name = views[0].getAttribute("data-view");
     }
+    currentView = name;
     highlightNav(name);
     window.scrollTo({ top: 0, behavior: "auto" });
+    onScroll();
     observeReveals();
   }
 
@@ -53,7 +56,11 @@
 
   function onScroll() {
     var y = window.scrollY || document.documentElement.scrollTop;
-    if (header) header.classList.toggle("scrolled", y > 20);
+    var overHero = (currentView === "hero") && (y <= 24);
+    if (header) {
+      header.classList.toggle("over-hero", overHero);
+      header.classList.toggle("scrolled", !overHero && y > 20);
+    }
     if (progress) {
       var h = document.documentElement.scrollHeight - window.innerHeight;
       var p = h > 0 ? (y / h) * 100 : 0;

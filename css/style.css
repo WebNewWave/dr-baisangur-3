@@ -48,6 +48,14 @@ em,i{font-style:italic}
 .nav-toggle{display:none;flex-direction:column;gap:5px;background:none;border:0;cursor:pointer;padding:8px}
 .nav-toggle span{width:24px;height:2px;background:var(--c-ink);border-radius:2px;transition:transform var(--t) var(--ease),opacity var(--t) var(--ease)}
 
+/* Хедер над тёмным hero: прозрачный фон + белый текст и иконка, чтобы были читаемы */
+.site-header.over-hero{background:transparent;backdrop-filter:none;-webkit-backdrop-filter:none;box-shadow:none}
+.site-header.over-hero .brand{color:#fff}
+.site-header.over-hero .site-nav a{color:rgba(255,255,255,.88)}
+.site-header.over-hero .brand-logo{filter:brightness(0) invert(1)}
+.site-header.over-hero .nav-toggle span{background:#fff}
+.site-header.over-hero .cta-button{background:rgba(255,255,255,.16);color:#fff;box-shadow:none}
+
 /* ---------- SPA views ---------- */
 .spa-root{position:relative}
 .view{display:none;padding-top:88px}
@@ -68,8 +76,8 @@ em,i{font-style:italic}
 /* ---------- Hero (ken-burns) ---------- */
 .view-hero{padding-top:0}
 .hero-media{position:absolute;inset:0;z-index:0;overflow:hidden}
-.hero-kenburns{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;animation:kenburns 18s ease-in-out infinite alternate}
-@keyframes kenburns{from{transform:scale(1) translate(0,0)}to{transform:scale(1.12) translate(-2%,-2%)}}
+.hero-kenburns{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center top;animation:kenburns 18s ease-in-out infinite alternate}
+@keyframes kenburns{from{transform:scale(1.04)}to{transform:scale(1.16)}}
 .hero-overlay{position:absolute;inset:0;background:linear-gradient(180deg,rgba(61,64,91,.55),rgba(61,64,91,.78)),radial-gradient(800px 400px at 70% 20%,rgba(224,122,95,.25),transparent 60%)}
 .hero-inner{position:relative;z-index:1;min-height:100vh;display:flex;flex-direction:column;justify-content:center;color:#fff;padding-top:120px;padding-bottom:80px}
 .hero-kicker{font-size:13px;font-weight:700;letter-spacing:.24em;color:#F2D9CF;margin:0 0 20px}
@@ -118,7 +126,7 @@ em,i{font-style:italic}
 .story-block{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center;margin-bottom:64px;background:var(--c-paper);border-radius:var(--radius);padding:26px;box-shadow:var(--shadow-sm)}
 .story-block--rev{direction:rtl}
 .story-block--rev>*{direction:ltr}
-.story-media img{width:100%;border-radius:var(--radius);aspect-ratio:4/5;object-fit:cover;box-shadow:var(--shadow)}
+.story-media img{width:100%;border-radius:var(--radius);aspect-ratio:4/5;object-fit:cover;object-position:center top;box-shadow:var(--shadow)}
 .story-media--tall img{aspect-ratio:3/4}
 .story-chapter{font-family:var(--f-body);font-size:13px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--c-coral)}
 .story-text h3{font-size:clamp(24px,3.4vw,34px);margin:10px 0 16px}
@@ -151,21 +159,21 @@ em,i{font-style:italic}
 .rec-item p{margin:0;color:var(--c-muted);font-size:15px}
 
 /* ---------- Контакты ---------- */
-.contact-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:44px}
+.contact-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:32px}
 .contact-lead{font-size:21px;color:var(--c-ink);font-weight:500;margin:0 0 22px}
-.contact-cta{display:inline-flex;align-items:center;gap:14px;background:var(--c-coral);color:#fff;padding:16px 26px;border-radius:999px;box-shadow:0 14px 30px rgba(224,122,95,.4);margin-bottom:30px;transition:transform var(--t) var(--ease),background var(--t)}
+.contact-cta{display:inline-flex;align-items:center;gap:14px;background:var(--c-coral);color:#fff;padding:16px 26px;border-radius:999px;box-shadow:0 14px 30px rgba(224,122,95,.4);margin-bottom:22px;transition:transform var(--t) var(--ease),background var(--t)}
 .contact-cta:hover{transform:translateY(-2px);background:var(--c-coral-deep)}
 .contact-cta-handle{font-family:var(--f-display);font-weight:700;font-size:18px}
 .contact-cta-label{font-size:14px;opacity:.92}
 .contact-cta svg{width:20px;height:20px}
-.contact-list{list-style:none;padding:0;margin:0;display:grid;gap:16px}
+.contact-list{list-style:none;padding:0;margin:0;display:grid;gap:12px}
 .contact-list li{display:flex;flex-direction:column;gap:3px;border-bottom:1px solid var(--c-line);padding-bottom:12px}
 .contact-label{font-size:12px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--c-coral)}
 .contact-list a{font-weight:600;color:var(--c-ink)}
-.contact-aside{display:flex;flex-direction:column;gap:16px}
+.contact-aside{display:flex;flex-direction:column;gap:12px}
 .contact-photo img{width:100%;border-radius:var(--radius);aspect-ratio:4/5;object-fit:cover;box-shadow:var(--shadow)}
 .contact-qr-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
-.contact-qr-item{background:var(--c-paper);border:1px solid var(--c-line);border-radius:14px;padding:16px;text-align:center;transition:transform var(--t) var(--ease),box-shadow var(--t)}
+.contact-qr-item{background:var(--c-paper);border:1px solid var(--c-line);border-radius:14px;padding:14px;text-align:center;transition:transform var(--t) var(--ease),box-shadow var(--t)}
 .contact-qr-item:hover{transform:translateY(-3px);box-shadow:var(--shadow-sm)}
 .contact-qr-icon{font-size:22px;color:var(--c-coral);margin-bottom:6px}
 .contact-qr-item span{display:block;font-weight:600;color:var(--c-ink);font-size:14px}
@@ -175,6 +183,9 @@ em,i{font-style:italic}
 .fab{position:fixed;right:24px;bottom:24px;z-index:110;display:inline-flex;align-items:center;gap:10px;background:var(--c-ink);color:#fff;font-weight:600;font-size:14px;padding:14px 22px;border-radius:999px;box-shadow:var(--shadow);transition:transform var(--t) var(--ease),background var(--t)}
 .fab svg{width:20px;height:20px}
 .fab:hover{transform:translateY(-3px);background:var(--c-coral-deep)}
+
+/* Компактнее экран контактов */
+.view-contact .view-inner{padding-top:48px;padding-bottom:48px}
 
 /* ---------- Footer ---------- */
 .site-footer{background:var(--c-ink);color:rgba(255,255,255,.8);margin-top:60px}
