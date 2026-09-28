@@ -225,7 +225,8 @@ em,i{font-style:italic}
 @media (max-width:640px){
   .contact-grid{display:flex;flex-direction:column;gap:18px}
   .contact-aside{order:-1}
-  .contact-photo img{aspect-ratio:16/10;max-height:220px;object-position:center top}
+  .contact-photo img{aspect-ratio:16/10;max-height:220px;object-position:center 10%}
+  .about-photo img{aspect-ratio:16/9;object-position:center 10%}
   .contact-qr-grid{gap:10px}
   .contact-cta{width:100%;justify-content:center}
   .contact-list{grid-template-columns:1fr 1fr;gap:10px 14px}
