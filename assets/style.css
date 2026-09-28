@@ -95,7 +95,7 @@ em,i{font-style:italic}
 
 /* ---------- О враче ---------- */
 .about-photo{margin:10px 0 30px}
-.about-photo img{width:100%;border-radius:var(--radius);box-shadow:var(--shadow);aspect-ratio:16/9;object-fit:cover;object-position:center top}
+.about-photo img{width:100%;border-radius:var(--radius);box-shadow:var(--shadow);aspect-ratio:16/9;object-fit:cover;object-position:center 25%}
 .about-lead{font-size:18px;color:var(--c-ink);font-weight:500;line-height:1.6}
 .about-chapters p{margin:0 0 18px}
 .pull-quote{font-family:var(--f-display);font-style:italic;font-size:clamp(18px,3.4vw,32px);color:var(--c-coral-deep);text-align:center;margin:44px 0 0;line-height:1.4;padding:0 4%}
@@ -242,7 +242,7 @@ em,i{font-style:italic}
   .section-kicker{font-size:11px}
   .section-lead{font-size:15px}
   .section-quote{font-size:16px}
-  .about-lead{font-size:15px}
+  .about-lead{font-size:14px}
   .about-chapters p{font-size:14.5px;line-height:1.65}
   .pull-quote{font-size:17px;padding:0 2%}
   .pull-quote cite{font-size:13px}
