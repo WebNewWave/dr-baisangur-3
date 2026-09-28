@@ -68,7 +68,7 @@ em,i{font-style:italic}
 .section-header{display:flex;flex-direction:column;gap:10px;margin-bottom:34px}
 .section-header.center{text-align:center;align-items:center}
 .section-kicker{font-family:var(--f-body);font-size:13px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--c-coral)}
-.section-title{font-size:clamp(34px,5.5vw,56px)}
+.section-title{font-size:clamp(28px,5.5vw,56px)}
 .section-lead{font-size:clamp(17px,2vw,20px);color:var(--c-muted);max-width:60ch;margin:0 0 44px}
 .section-lead.center{margin-left:auto;margin-right:auto;text-align:center}
 .section-quote{font-family:var(--f-display);font-style:italic;font-size:clamp(20px,3vw,28px);color:var(--c-ink);text-align:center;margin-top:40px;line-height:1.4}
@@ -81,7 +81,7 @@ em,i{font-style:italic}
 .hero-overlay{position:absolute;inset:0;background:linear-gradient(180deg,rgba(61,64,91,.55),rgba(61,64,91,.78)),radial-gradient(800px 400px at 70% 20%,rgba(224,122,95,.25),transparent 60%)}
 .hero-inner{position:relative;z-index:1;min-height:100vh;display:flex;flex-direction:column;justify-content:center;color:#fff;padding-top:120px;padding-bottom:80px}
 .hero-kicker{font-size:13px;font-weight:700;letter-spacing:.24em;color:#F2D9CF;margin:0 0 20px}
-.hero-title{font-size:clamp(44px,8vw,92px);font-weight:800;letter-spacing:-.02em;color:#fff;text-shadow:0 4px 30px rgba(0,0,0,.3)}
+.hero-title{font-size:clamp(36px,8vw,92px);font-weight:800;letter-spacing:-.02em;color:#fff;text-shadow:0 4px 30px rgba(0,0,0,.3)}
 .hero-sub{font-size:clamp(16px,2vw,20px);max-width:52ch;margin:24px 0 34px;color:rgba(255,255,255,.9)}
 .hero-actions{display:flex;gap:16px;flex-wrap:wrap;align-items:center}
 .cta-primary{background:var(--c-coral);color:#fff;font-weight:600;padding:15px 32px;border-radius:999px;box-shadow:0 14px 30px rgba(224,122,95,.4);transition:transform var(--t) var(--ease),background var(--t)}
@@ -95,7 +95,7 @@ em,i{font-style:italic}
 
 /* ---------- О враче ---------- */
 .about-photo{margin:10px 0 30px}
-.about-photo img{width:100%;border-radius:var(--radius);box-shadow:var(--shadow);aspect-ratio:16/9;object-fit:cover}
+.about-photo img{width:100%;border-radius:var(--radius);box-shadow:var(--shadow);aspect-ratio:16/9;object-fit:cover;object-position:center top}
 .about-lead{font-size:21px;color:var(--c-ink);font-weight:500;line-height:1.6}
 .about-chapters p{margin:0 0 18px}
 .pull-quote{font-family:var(--f-display);font-style:italic;font-size:clamp(22px,3.4vw,32px);color:var(--c-coral-deep);text-align:center;margin:44px 0 0;line-height:1.4;padding:0 4%}
@@ -171,7 +171,7 @@ em,i{font-style:italic}
 .contact-label{font-size:12px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--c-coral)}
 .contact-list a{font-weight:600;color:var(--c-ink)}
 .contact-aside{display:flex;flex-direction:column;gap:12px}
-.contact-photo img{width:100%;border-radius:var(--radius);aspect-ratio:4/5;object-fit:cover;box-shadow:var(--shadow)}
+.contact-photo img{width:100%;border-radius:var(--radius);aspect-ratio:4/5;object-fit:cover;object-position:center top;box-shadow:var(--shadow)}
 .contact-qr-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
 .contact-qr-item{background:var(--c-paper);border:1px solid var(--c-line);border-radius:14px;padding:14px;text-align:center;transition:transform var(--t) var(--ease),box-shadow var(--t)}
 .contact-qr-item:hover{transform:translateY(-3px);box-shadow:var(--shadow-sm)}
@@ -218,6 +218,19 @@ em,i{font-style:italic}
   .fab span{display:none}
   .fab{padding:14px}
   .hero-inner{min-height:88vh}
+}
+
+/* Мобильные контакты (<640px): фото+QR наверх, CTA во всю ширину,
+   список плотный, на телефоне всё в один столбец, голова видна целиком. */
+@media (max-width:640px){
+  .contact-grid{display:flex;flex-direction:column;gap:18px}
+  .contact-aside{order:-1}
+  .contact-photo img{aspect-ratio:16/10;max-height:220px;object-position:center top}
+  .contact-qr-grid{gap:10px}
+  .contact-cta{width:100%;justify-content:center}
+  .contact-list{grid-template-columns:1fr 1fr;gap:10px 14px}
+  .contact-list li{padding-bottom:10px}
+  .contact-lead{font-size:clamp(17px,4.6vw,20px)}
 }
 
 .nav-toggle.active span:nth-child(1){transform:translateY(7px) rotate(45deg)}
