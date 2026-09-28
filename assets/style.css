@@ -95,7 +95,7 @@ em,i{font-style:italic}
 
 /* ---------- О враче ---------- */
 .about-photo{margin:10px 0 30px}
-.about-photo img{width:100%;border-radius:var(--radius);box-shadow:var(--shadow);aspect-ratio:16/9;object-fit:cover;object-position:center 25%}
+.about-photo img{width:100%;border-radius:var(--radius);box-shadow:var(--shadow);aspect-ratio:16/9;object-fit:cover;object-position:center 10%}
 .about-lead{font-size:18px;color:var(--c-ink);font-weight:500;line-height:1.6}
 .about-chapters p{margin:0 0 18px}
 .pull-quote{font-family:var(--f-display);font-style:italic;font-size:clamp(18px,3.4vw,32px);color:var(--c-coral-deep);text-align:center;margin:44px 0 0;line-height:1.4;padding:0 4%}
@@ -127,7 +127,7 @@ em,i{font-style:italic}
 .story-block--rev{direction:rtl}
 .story-block--rev>*{direction:ltr}
 .story-media img{width:100%;border-radius:var(--radius);aspect-ratio:4/5;object-fit:cover;object-position:center top;box-shadow:var(--shadow)}
-.story-media--tall img{aspect-ratio:3/4}
+.story-media--tall img{aspect-ratio:9/16;object-position:center}
 .story-chapter{font-family:var(--f-body);font-size:13px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--c-coral)}
 .story-text h3{font-size:clamp(20px,3.4vw,34px);margin:10px 0 16px}
 .story-text p{margin:0 0 14px;color:var(--c-ink-soft)}
