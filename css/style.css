@@ -51,7 +51,7 @@ em,i{font-style:italic}
 /* Хедер над тёмным hero: прозрачный фон + белый текст и иконка, чтобы были читаемы */
 .site-header.over-hero{background:transparent;backdrop-filter:none;-webkit-backdrop-filter:none;box-shadow:none}
 .site-header.over-hero .brand{color:#fff}
-.site-header.over-hero .site-nav a{color:rgba(255,255,255,.88)}
+.site-header.over-hero .site-nav a{color:rgba(82,86,110,.88)}
 .site-header.over-hero .brand-logo{filter:brightness(0) invert(1)}
 .site-header.over-hero .nav-toggle span{background:#fff}
 .site-header.over-hero .cta-button{background:rgba(255,255,255,.16);color:#fff;box-shadow:none}
